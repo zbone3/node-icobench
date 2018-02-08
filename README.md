@@ -2,6 +2,12 @@
 A simple Node.js wrapper for the ICOBench.com API
 
 
+## Prerequisites
+You need to request access to ICOBench's API by following next steps:
+1. Register a new account [here](https://icobench.com/register).
+2. Request the API key [here](https://icobench.com/developers).
+
+
 ## Installation
 `npm install node-icobench`
 
