@@ -1,15 +1,24 @@
 {
   "name": "node-icobench",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple node.js API client for ICOBench.com",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "https://github.com/zbone3/node-icobench",
   "keywords": [
     "ICOBench",
-    "API"
+    "icos",
+	"ico api",
+	"ico wrapper",
+	"cryptocurrencies",
+	"cryptocurrency"
   ],
+  "repository": {
+	"type": "git",
+	"url": "https://github.com/zbone3/node-icobench.git"
+  },
   "author": "Ziv Eli",
   "license": "ISC",
   "dependencies": {
