@@ -41,7 +41,7 @@ icobench.people.registered();
 icobench.icos.trending();
 
 // Get more information on an ICO
-icobench.ico.profile({id: 678});
+icobench.ico.profile({ico: 678});
 
 
 
@@ -81,7 +81,7 @@ Example: get page 2 of all icos: `icobench.icos.all({page: 2})`
 | /icos/filters       | icobench.icos.filters     | optional               |
 | /icos/trending      | icobench.icos.trending    | optional               |
 | /icos/ratings       | icobench.icos.ratings     | optional               |
-| /ico/{id &#124; url}| icobench.ico.profile      | Object: {id: [ICO ID]} |
+| /ico/{id &#124; url}| icobench.ico.profile      | Object: {ico: [ICO ID]}|
 | /people/{all}       | icobench.people.all       | optional               |
 | /people/{expert}    | icobench.people.expert    | optional               |
 | /people/{registered}| icobench.people.registered| optional               |
