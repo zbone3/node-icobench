@@ -17,7 +17,7 @@ let icoBench = function(publicKey, privateKey){
 		registered: 'people/registered',
 		stats: 'other/stats',
 		trending: 'icos/trending',
-        filters: '/icos/filters',
+		filters: '/icos/filters',
 	}
 	__this = this;
 };
