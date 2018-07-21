@@ -1,6 +1,6 @@
 {
   "name": "node-icobench",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple node.js API client for ICOBench.com",
   "main": "index.js",
   "scripts": {
