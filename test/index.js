@@ -88,6 +88,19 @@ describe('API Test', function(){
 
 	})
 	
+	describe('ICOs Filters', function() {
+		let stats;
+		
+		before(async function() {
+			filters = await icobench.filters();
+		})
+		it('should be of type Object', function() {
+			returnType(filters, 'object');
+		})
+		
+
+	})
+	
 	describe('All ICOs', function() {
 		let allIcos;
 		let specificPage;
