@@ -1,3 +1,4 @@
+const axiosCache = require('axios-cache-adapter');
 const axios = require('axios');
 const cryptoJS = require('crypto-js');
 const Base64 = require('crypto-js/enc-base64');
@@ -41,11 +42,15 @@ var sendRequest = async function(ctx, url, data) {
   try {
     // Get JSON representation
     let json = JSON.stringify(data);
-
+    // Create cache
+    const cache = axiosCache.setupCache({
+      maxAge: 24 * 60 * 60
+    });
     // Sign JSON
     let signedData = signRequest(ctx, json);
     let config = {
-      timeout: 5000,
+      timeout: 10000,
+      adapter: cache.adapter,
       headers: {
         'X-ICObench-Key': ctx.publicKey,
         'X-ICObench-Sig': signedData,
@@ -112,7 +117,7 @@ icoBench.prototype = {
       return await createApiRequest(__this, arguments.callee.name, data);
     }
   },
-  stats: async function(data) {
+  ats: async function(data) {
     return await createApiRequest(__this, arguments.callee.name, data);
   }
 };
