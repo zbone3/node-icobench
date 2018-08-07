@@ -2,8 +2,8 @@ let assert = require('chai').assert;
 let ICOBench = require('../index');
 
 // Use the public and private keys you received on icobench.com
-const pubKey = 'e098e76d-afe2-4178-8554-d66145237ed6';
-const priKey = 'be0ffae6-5e59-4887-8e1d-4e58deca8028';
+const pubKey = '';
+const priKey = '';
 
 let icobench = new ICOBench(pubKey, priKey);
 
