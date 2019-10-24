@@ -3,6 +3,9 @@
   "version": "1.0.5",
   "description": "A simple node.js API client for ICOBench.com",
   "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha --timeout 10000"
+  },
   "homepage": "https://github.com/zbone3/node-icobench",
   "keywords": [
     "ICOBench",
